@@ -1,0 +1,16 @@
+:host ::ng-deep .datatable-body-cell {
+  color: #2F4F4F;
+}
+:host ::ng-deep .datatable-body-row{
+  border-top: 1px solid #f9fafb!important;
+}
+
+:host ::ng-deep .datatable-row-even{
+  background: #f9fafb!important;
+}
+
+
+:host ::ng-deep .datatable-footer {
+  background: #f9fafb!important;
+}
+

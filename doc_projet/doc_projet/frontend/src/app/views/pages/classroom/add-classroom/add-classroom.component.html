@@ -1,0 +1,41 @@
+<nav class="page-breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink=".">Salle</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Ajouter</li>
+  </ol>
+</nav>
+<div class="row">
+  <div class="col-md-12 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="card-title">Ajouter une salle</h6>
+        <form [formGroup]="classroomForm" (ngSubmit)="submit()">
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label"> Name</label>
+                <input type="text" class="form-control" formControlName="name" placeholder="Enter name">
+              </div>
+            </div>
+            <!-- Col -->
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label"> Location</label>
+                <input type="text" class="form-control" formControlName="location" placeholder="Enter location">
+              </div>
+            </div><!-- Col -->
+          </div><!-- Row -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label">Capacity</label>
+                <input type="number" class="form-control" formControlName="capacity" autocomplete="off" placeholder="Enter capacity">
+              </div>
+            </div><!-- Col -->
+          </div><!-- Row -->
+          <button type="submit" class="btn btn-primary submit">Ajouter</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

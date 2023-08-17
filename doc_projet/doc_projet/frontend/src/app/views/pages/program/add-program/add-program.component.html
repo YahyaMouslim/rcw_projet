@@ -1,0 +1,40 @@
+<nav class="page-breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink=".">Programmes d'études</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Ajouter</li>
+  </ol>
+</nav>
+<div class="row">
+  <div class="col-md-12 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h6 class="card-title">Ajouter un programme d'étude</h6>
+        <form [formGroup]="programForm" (ngSubmit)="submit()">
+          <div class="row mt-4">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label"> Code</label>
+                <input type="text" class="form-control" formControlName="code" placeholder="Enter code">
+              </div>
+            </div><!-- Col -->
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label"> Name</label>
+                <input type="text" class="form-control" formControlName="name" placeholder="Enter name">
+              </div>
+            </div><!-- Col -->
+          </div><!-- Row -->
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="mb-3">
+                <label class="form-label">Description</label>
+                <input type="text" class="form-control" formControlName="description" placeholder="Description du cours ....">
+              </div>
+            </div><!-- Col -->
+          </div><!-- Row -->
+          <button type="submit" class="btn btn-primary submit">Ajouter</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

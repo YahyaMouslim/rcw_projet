@@ -1,0 +1,59 @@
+<nav class="page-breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a routerLink=".">Salles</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Liste</li>
+  </ol>
+</nav>
+
+<div class="row">
+  <div class="col-md-12 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Gestion des salles</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <div style="display: flex;justify-content: space-between;flex-wrap: wrap">
+          <h6 class="card-title mt-2">Liste des salles</h6>
+          <input
+            type="text"
+            class="form-control"
+            style="width:250px"
+            placeholder="Recherche ..."
+            (keyup)="updateFilter($event)"
+          />
+        </div>
+        <div class="table-responsive mt-2">
+          <ngx-datatable
+            class="bootstrap"
+            [rows]="rows"
+            #table
+            [loadingIndicator]="loadingIndicator"
+            [columnMode]="ColumnMode.force"
+            [footerHeight]="50"
+            [limit]="7"
+            [rowHeight]="'auto'"
+            [scrollbarH]="true"
+          >
+
+            <ngx-datatable-column [canAutoResize]="false" name="Name"></ngx-datatable-column>
+            <ngx-datatable-column [canAutoResize]="false" name="Capacity"></ngx-datatable-column>
+            <ngx-datatable-column  name="Location" ></ngx-datatable-column>
+            <ngx-datatable-column [canAutoResize]="false"  name="Actions">
+              <ng-template ngx-datatable-cell-template let-row="row">
+                <button (click)="onEdit(row)" type="button" class="btn btn-xs btn-primary me-2"><i class="feather icon-edit"></i></button>
+                <button (click)="onDelete(row)" type="button" class="btn btn-xs btn-danger"><i class="feather icon-trash"></i></button>
+              </ng-template>
+            </ngx-datatable-column>
+          </ngx-datatable>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+Projet RCW fait par:
+Yahya Mouslim
+Mohamed Chain
+Bechir Ghazi Boukhari
+Achraf Lahlaoui 
+Ilyas El Khayate
+1-base de donnee Mongo,backend avec fixation du probleme de conflit d'horraire est fait par Yahya Mouslim-Mohamed Chain-Bechir Ghazi 
+ensemble en utilisons node avec une architecture micro services avec une documentation pour chaque api avec un système d’authentification.
+Pour la Configuration du Backend on a utilise yarn comme gestionnaire de paquets utilisé principalement dans l'écosystème JavaScript et Node.js.
+Aussi on a utilise Mongodb pour mongodb on a utilise atlas pour cree la base de donnee vous pouvez Mr verifier ca on utilison l'email :
+Mouslimyahya545@gmail.com
+et le mot de passe :Yahya2002
+Projet EmploiUI,Browse Collection et on a laiseer ip addresse 0.0.0.0/0 pour en network addresse pour qu'elle soit adapte avec n'importe qu'elle ip addresse
+2-Frontend a ete organise par Achraf Lahlaoui et Ilyas El Khayate
+
+Note Important :
+Pour le username de login est: dev@gmail.com
+password:1234

@@ -1,0 +1,29 @@
+:host ::ng-deep .datatable-body-cell {
+  color: #2F4F4F;
+}
+:host ::ng-deep .datatable-body-row{
+  border-top: 1px solid #f9fafb!important;
+}
+
+:host ::ng-deep .datatable-row-even{
+  background: #f9fafb!important;
+}
+
+
+:host ::ng-deep .datatable-footer {
+  background: #f9fafb!important;
+}
+
+hr.solid {
+  border-top: 2px solid dimgray;
+}
+
+.ng-select.custom  {
+  min-width: 120px;
+  color:#2F4F4F;
+  padding-right: 7px;
+}
+.ng-select.custom ::ng-deep .ng-select-container  {
+  border:1px solid #bbb!important;
+  color:#2F4F4F;
+}
